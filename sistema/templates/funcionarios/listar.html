@@ -1,0 +1,42 @@
+
+{% block conteudo %}
+    <div class="responsive-table">
+        <table class="clientes-tabel">
+            <caption class="table-caption">
+                Listagem de Clientes
+            </caption>
+
+            <thead>
+                <tr class="table-row" class="tabel-row-header">
+                    <th class="table-header">ID</th>
+                    <th class="table-header">Nome</th>
+                    <th class="table-header">Sobrenome</th>
+                    <th class="table-header">CPF</th>
+                    <th class="table-header">email</th>
+                    <th class="table-header">telefone</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                {% for i in funcionarios %}
+                    <tr class="table-row">
+                        <td class="table-cel"> {{ i.id }}</td>
+                        <td class="table-cel"> {{ i.nome }}</td>
+                        <td class="table-cel"> {{ i.sobrenome }}</td>
+                        <td class="table-cel"> {{ i.cpf }}</td>
+                        <td class="table-cel"> {{ i.email }}</td>
+                        <td class="table-cel"> {{ i.telefone }}</td>
+                    </tr> 
+                    
+
+
+
+                {% endfor %}
+            </tbody>
+
+
+
+        </table>
+    </div>
+{% endblock conteudo %}
+

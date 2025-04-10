@@ -1,0 +1,38 @@
+
+{% block conteudo %}
+    <div class="responsive-table">
+        <table class="clientes-tabel">
+            <caption class="table-caption">
+                Listagem de Clientes
+            </caption>
+
+            <thead>
+                <tr class="table-row" class="tabel-row-header">
+                    <th class="table-header">ID</th>
+                    <th class="table-header">nome_comercial</th>
+                    <th class="table-header">cnpj</th>
+                    <th class="table-header">tipo</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                {% for i in fornecedores %}
+                    <tr class="table-row">
+                        <td class="table-cel"> {{ i.id }}</td>
+                        <td class="table-cel"> {{ i.nome_comercial }}</td>
+                        <td class="table-cel"> {{ i.cnpj }}</td>
+                        <td class="table-cel"> {{ i.tipo }}</td>
+                    </tr> 
+                    
+
+
+
+                {% endfor %}
+            </tbody>
+
+
+
+        </table>
+    </div>
+{% endblock conteudo %}
+
