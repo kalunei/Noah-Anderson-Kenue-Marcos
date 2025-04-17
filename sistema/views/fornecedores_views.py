@@ -15,3 +15,6 @@ def listarFornecedores(request):
         'fornecedores/listar.html',
         context,
     )
+
+
+
